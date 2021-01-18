@@ -325,11 +325,29 @@ Error message and password prompt
 
 <li>GRC</li>
 
+<li>Hardware Security Module Applications</li>
+
 <li>HIPAA</li>
 
 <li>HITECH</li>
 
 <li>HSM</li>
+
+<li>HSM Architecture</li>
+
+<li>HSM Benefits</li>
+
+<li>HSM Definition</li>
+
+<li>HSM Introduction</li>
+
+<li>HSM Introduction 2</li>
+
+<li>HSM Selection</li>
+
+<li>HSM vs TPM</li>
+
+<li>HSM Work Process</li>
 
 <li>IaaS</li>
 
@@ -475,11 +493,27 @@ Error message and password prompt
 
 <li>TEE</li>
 
+<li>TEE Introduction</li>
+
+<li>TEE Origin</li>
+
+<li>TEE Position</li>
+
+<li>TEE User Case</li>
+
 <li>TLS</li>
 
 <li>TOGAF</li>
 
 <li>TPM</li>
+
+<li>TPM 2 Standard Description</li>
+
+<li>TPM 2.0 Crypto Update</li>
+
+<li>TPM Chipset Usage</li>
+
+<li>TPM2 News</li>
 
 <li>transposition cipher</li>
 
@@ -9932,7 +9966,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="EAP AKA SDN KNN SVM IEEE" title="$:/StoryList">
+<div created="20210118100318200" list="[[HSM Selection]] [[HSM Benefits]] [[HSM vs TPM]] [[Hardware Security Module Applications]] [[HSM Architecture]] [[HSM Work Process]] [[HSM Definition]] [[HSM Introduction 2]] [[HSM Introduction]] TPM [[TEE Origin]] TrustZone [[TPM 2.0 Crypto Update]] [[TPM Chipset Usage]] [[TPM2 News]] TEE [[TEE Introduction]]" modified="20210118120136436" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9996,8 +10030,8 @@ Error message and password prompt
 <div created="20201214015738866" modified="20201220053500904" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20201214032910570" modified="20201220053452606" title="$:/temp/search">
-<pre>aka</pre>
+<div created="20201214032910570" modified="20210118105045821" title="$:/temp/search">
+<pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -10570,6 +10604,28 @@ The General Data Protection Regulation (EU) 2016/679 (GDPR) is a regulation in E
 <pre>GRC（Governance, Risk and Compliance,治理，风险和合规）
 </pre>
 </div>
+<div created="20210118130356100" modified="20210118130558605" tags="Hardware" title="Hardware Security Module Applications">
+<pre>使用数字密钥的任何应用程序都可以使用硬件安全模块。通常，为了证明使用HSM是合理的，密钥的泄露将需要引起严重的负面影响。换句话说，数字密钥必须具有很高的价值才能在硬件安全模块USB或其他设备中生成和维护。
+
+HSM的关键功能如下：
+
+* 对于证书颁发机构，HSM是板载加密密钥生成和安全密钥存储工具，特别是对于主密钥或最敏感的顶级密钥。
+* 通过验证数字签名来协助认证过程。
+* 验证存储在相对不太安全的位置（例如数据库）中的敏感数据的完整性，并安全加密敏感数据以进行存储。
+* 生成用于智能卡生产的安全密钥。
+* 管理磁带或磁盘等存储设备的密钥以及数据库的透明数据加密密钥。
+* 为敏感信息（包括加密密钥）提供物理和逻辑保护，以防止未经授权的使用，泄露和潜在的攻击者。
+* 支持非对称或公共密钥密码和对称密码。
+* 一些HSM系统充当SSL连接的硬件加密加速器，许多系统提供非对称密钥操作，从而显着降低CPU负载。现在，大多数HSM都支持椭圆曲线加密（ECC），尽管密钥长度较短，但它提供了更强大的加密。
+* 对于性能至关重要且必须使用HTTPS（SSL / TLS）的应用程序，SSL加速HSM可以将RSA操作从主机CPU重新定位到HSM设备。 RSA操作通常需要几个大整数乘法，并且典型的硬件安全模块每秒可以执行大约1到10,000个1024位RSA操作。某些基于专用硬件的安全模块每秒可以实现20,000个操作。
+* 在PKI环境中，注册机构（RA）和证书机构（CA）可以使用HSM生成，管理和存储不对称密钥对。
+* 银行硬件安全模块或卡支付系统硬件安全模块是在支付卡行业中应用的专用HSM。这样，这些HSM既支持典型的硬件安全模块功能，又支持进行合规性处理和行业标准交易的专用功能。典型的应用是支付卡的个性化和交易授权。银行HSM的主要标准制定组织是ANS X9，支付卡行业安全标准委员会（PCISSC）和ISO。
+* 一些注册表存储用于在HSM中签署大型区域文件的核心材料。例如，OpenDNSSEC是用于管理DNS区域文件签名的开源硬件安全模块工具。
+* HSM可用作加密货币钱包。
+
+https://avinetworks.com/glossary/hardware-security-modules/
+</pre>
+</div>
 <div created="20201214101549531" modified="20201214101625097" tags="Law" title="HIPAA">
 <pre>Health Insurance Portability and Accountability Act of 1996 (HIPAA)
 
@@ -10584,11 +10640,144 @@ https://www.cdc.gov/phlp/publications/topic/hipaa.html
 The Health Information Technology for Economic and Clinical Health (HITECH) Act
 </pre>
 </div>
-<div created="20201214074547896" modified="20201214074729372" tags="Crypto" title="HSM">
+<div created="20201214074547896" modified="20210118120134795" tags="Crypto" title="HSM">
 <pre>硬件安全模块
 
 Hardware Security Module
 
+[[HSM Introduction]]
+
+
+</pre>
+</div>
+<div created="20210118125754106" modified="20210118130333347" tags="Hardware" title="HSM Architecture">
+<pre>HSM可能具有防篡改或抗篡改功能。例如，硬件安全模块可能显示可见的日志记录和警报迹象，或者如果被篡改，则可能变得无法操作。一些HSM可能会在检测到篡改后删除密钥。硬件安全模块通常受到防篡改或响应篡改的封装保护，并且包含一个或多个密码处理器芯片或包含芯片组合以防止总线探测和总线篡改。
+
+HSM通常可以集群化以实现高可用性，因为它们通常是关键任务基础架构（例如，在线银行应用程序或公钥基础结构）的一部分。一些硬件安全模块可实现业务连续性并符合数据中心环境的高可用性要求。例如，它们可能具有可现场更换的组件或双电源功能，以确保即使发生灾难也仍然可用。
+
+某些HSM可以内部使用本机C语言，Java，.NET或其他编程语言执行专门开发的模块。这种功能可以帮助需要在受信任的环境中执行业务逻辑或特殊算法的组织。下一代硬件安全模块通常可以解决运行和加载COTS软件和操作系统以及其他复杂任务的问题，而无需进行完整的重新编程和自定义。
+
+https://avinetworks.com/glossary/hardware-security-modules/
+</pre>
+</div>
+<div created="20210118131512847" modified="20210118132106923" tags="Hardware" title="HSM Benefits">
+<pre>硬件安全模块的主要好处是：物理访问保护，密钥材料的安全管理，密钥的安全生成以及安全的执行环境。
+
+无法完全保护常规IT系统免受外部攻击。相比之下，HSM具有一系列旨在防止外部攻击和任何物理篡改的保护机制。这些通常包括：电压和温度传感器，嵌入树脂的芯片和钻孔保护箔。
+
+例如，如果攻击者试图通过撬开封装或使用酸或冰来腐蚀封装，从而侵入HSM设备，则传感器会立即记录攻击，触发警报并采取任何在配置中规定的对策，例如删除密钥。
+
+密钥仅在随机且受到良好保护时才有用，否则容易被攻击者猜测。在传统的IT系统中，存在有限的方式来生成安全密钥，因为它们依赖于处理if-then情况的传统命令。不幸的是，知道任何给定命令的“ if”或输入数据可以使熟练的攻击者预测“ then”或输出数据。
+
+HSM通过生成真正的随机密钥来解决此问题。他们通过从附近的随机物理过程（例如大气噪声或原子衰变过程）中收集数据来产生不可预测的值，以用作随机密钥的熵来实现此目的。
+
+重要的是，硬件安全模块会在执行签名，加密和其他密码学操作时生成，存储和使用这些密钥，并且所有这些对安全至关重要的过程都在HSM的安全环境中进行。
+
+由于用于加密操作的密钥永远不会逃脱HSM，因此环境提供了针对逻辑攻击的最大保护：几乎不可能窃取它们。一些硬件安全模块还通过为用户应用程序提供安全的执行环境来保护用户免受特洛伊木马和内部攻击。在这些系统中，整个应用程序在HSM的安全空间内进行编程和执行。
+
+https://avinetworks.com/glossary/hardware-security-modules/
+</pre>
+</div>
+<div created="20210118124543119" modified="20210118124621987" tags="Hardware" title="HSM Definition">
+<pre>通用硬件安全模块是符合标准的加密设备，它使用物理安全措施，逻辑安全控制和强大的加密功能来保护传输中，使用中和静止时的敏感数据。 HSM也可以称为安全应用程序模块（SAM），个人计算机安全模块（PCSM）或硬件加密模块。
+
+硬件安全模块创建了一个受信任的环境，用于执行各种加密操作，包括密钥交换，密钥管理和加密。在这种情况下，“受信任”意味着没有恶意软件和病毒，并且受到保护，免受攻击和未经授权的访问。
+
+可以信任HSM，因为：
+
+* 它建立在经过认证，经过良好测试的专用硬件之上。
+* 它运行以安全性为重点的OS。
+* 它的整个设计可主动保护和隐藏密码信息。
+* 通过内部规则严格控制的仲裁接口，它对网络的访问受到限制。
+
+没有硬件安全模块，普通操作和加密操作会在相同的位置进行，因此攻击者可以访问普通业务逻辑数据以及诸如密钥和证书之类的敏感信息。黑客可以安装任意证书，扩展未经授权的访问，更改代码，否则可能对加密操作造成危险。
+
+https://avinetworks.com/glossary/hardware-security-modules/
+</pre>
+</div>
+<div created="20210118120141750" modified="20210118120238455" tags="Hardware" title="HSM Introduction">
+<pre>硬件安全模块 （HSM） 是一种硬件加密设备，它连接到设备级别的服务器，通常使用 PCI、SCSI、串行或 USB 接口。
+
+HSM 是一种专用硬件设备，与操作系统分开管理。这些模块为 CA 密钥提供了一个安全的硬件存储，以及一个专用的加密处理器，用于加速签名和加密操作。
+
+Windows 通过 CryptoAPI 接口利用 HSM， HSM 作为加密服务提供商 （CSP） 设备的功能。
+
+HSM 可以提供安全的运行管理 （受多层硬件和软件令牌保护） 以及许多其他关键功能，包括：
+
+* 基于硬件的加密操作（如随机数生成、密钥生成、数字签名以及密钥存档和恢复）。
+* 用于保护非对称加密操作的私钥的硬件保护。
+* 私钥的安全管理。
+* 加速加密操作（这免除了主机服务器必须执行处理器密集型加密计算的方法）
+* 使用通过菊花链链接在一起的多个 HSM，硬件模块中的负载平衡和故障转移。
+</pre>
+</div>
+<div created="20210118124207376" modified="20210118124535678" tags="Hardware" title="HSM Introduction 2">
+<pre>硬件安全模块（HSM）是专用的加密处理器，用于管理和保护数字密钥。 专门设计用于保护加密密钥生命周期的硬件安全模块执行加密和解密功能，以实现强大的身份验证，数字签名和其他加密功能。
+
+HSM充当信任锚，以创建用于存储加密密钥的加固，防篡改环境。 传统上，硬件安全模块包括一个或多个安全密码处理器芯片，通常以直接连接到网络服务器或计算机的外部设备或插入卡的形式存在。
+
+https://avinetworks.com/glossary/hardware-security-modules/
+</pre>
+</div>
+<div created="20210118132158527" modified="20210118132810001" tags="Hardware" title="HSM Selection">
+<pre>以下是要考虑的硬件安全模块的最重要的优点和功能：
+
+* ''FIPS 140-1或140-2符合性和验证''。联邦信息处理标准（FIPS）为验证HSM定义了四个级别。验证表示HSM已通过合格专家在FIPS认可的测试机构进行的安全测试的合理基准。这远远超出了仅符合FIPS 140的要求。
+
+* ''专有算法与开放算法''。避免使用秘密的专有算法，除非它们是已公开且被广泛接受且安全的选项的补充。 （如果您的HSM同时使用这两种方法，请确保对其进行了正确配置，以免使用专有算法。）寻找用于数字签名的基于DSA或RSA的加密算法。对于散列，MD5或SHA-1是不错的选择。 3-DES是加密的好选择。
+
+* ''强大的随机数生成''。任何HSM必须具有强大的随机数生成（RNG）或伪随机数生成能力，以支持密钥生成和其他加密功能。
+
+* ''可扩展性''。硬件安全模块体系结构应支持负载平衡和群集，以便可以随着网络体系结构的扩展而扩展。
+
+* ''安全的时间来源''。安全的不可否认性和审核要求已记录消息的安全时间和日期源。基于服务器的时间来源容易被黑客入侵，是少数几个常见的硬件安全模块漏洞。仅应允许经过身份验证的管理员更改HSM上的时间，该时间也应安全地记录事件。
+
+* ''使用方便''。标准化的开发人员界面和安全，简单的用户界面都促进了HSM的使用，并帮助避免了昂贵的错误。
+
+* ''有据可查的设备安装''。清楚记录所有安装和维护事件，包括电池更换，已知的硬件冲突，机器兼容性问题以及设备上的物理开关。
+
+* ''密钥备份''。对于用于验证或加密数据库或证书颁发机构中的数据的任何HSM，安全密钥备份都是至关重要的。最好将备份密钥备份到多个智能卡，然后分别存储。
+
+* ''密钥保护''。硬件安全模块应通过加密超出其物理边界导出的任何密钥来保护密钥。
+
+* ''防篡改''。如果HSM检测到任何异常的电流活动，物理渗透，异常的温度或其他篡改迹象，则应删除所有敏感数据或对其进行“归零”。成功的攻击者一旦获得物理访问权，就可以检索这些秘密密钥。
+
+当然，硬件安全模块有几个缺点-主要围绕成本，具体取决于事实所需的安全性和功能级别。一些HSM也难以实施和升级。但是，利用云原生技术及其固有的可扩展性可以帮助解决这些问题。
+
+https://avinetworks.com/glossary/hardware-security-modules/
+</pre>
+</div>
+<div created="20210118130605948" modified="20210118131245325" tags="Hardware" title="HSM vs TPM">
+<pre>可信执行环境（[[TEE]]）是作为主计算机处理器的一部分创建的安全区域。它旨在确保TEE内部的数据和代码在完整性和机密性方面得到保护。
+
+可信平台模块（[[TPM]]）是一种特殊的芯片，设计并焊接在主板上，因此通过软件访问其密钥具备困难性，而以硬件方式对其访问或者修改的企图很容易被发现。该物理模块旨在提供计算系统中信任的硬件来源。尽管TPM可以提供一些基本功能，例如随机密钥生成或少量数据加密，但它们通常不会增加计算能力。
+
+相反，硬件安全模块将加密密钥保留在操作系统外部。尽管TEE，TPM和HSM之间存在一些重叠，但是它们并不相同，并且不能提供相同的收益。与TPM一样，HSM也会使物理篡改变得显而易见，但是与TPM和TEE相比，HSM往往提供更高级别的保护。
+
+有人认为，HSM不再需要依赖物理篡改保护和专有硬件体系结构。相反，他们可以利用TEE的安全属性来创建“软HSM”或虚拟硬件安全模块。例如，Google的Cloud HSM被称为云硬件安全模块，这是HSM的完全虚拟服务版本。
+
+这些解决方案的横向扩展能力强，因为可以使用云原生技术简化操作。但是，通过使用相同的云原生技术，应用于HSM，可以实现更高级别的安全性，同时提高性能并减少与硬件相关的运维挑战。
+
+总结一下：
+
+* TEE提供了一个通用的内置处理环境。它们是芯片组的一部分。
+* TPM提供有限的处理能力，启动顺序和其他组件的度量以及信任的物理源。它们是廉价的内置组件。
+* HSM是用于敏感数据处理，密钥的管理或存储以及加密操作的最高安全性环境。它们通常是成本更高的外部设备，尽管云技术可以帮助降低它们的成本和可扩展性。
+
+
+https://avinetworks.com/glossary/hardware-security-modules/
+</pre>
+</div>
+<div created="20210118124903708" modified="20210118125742075" tags="Hardware" title="HSM Work Process">
+<pre>加密是HSM的核心功能，而加密是使敏感数据无法被非授权访问的过程。安全解密和消息身份验证也是HSM功能的一部分。
+
+随机生成的值对于加密过程至关重要，因为它们用于创建加密密钥。只要具备加密密钥，解密敏感信息非常容易。因此在安全环境中存储加密密钥至关重要。
+
+硬件安全模块生成并存储在各种设备之间使用的加密密钥。它使用硬件真随机数发生器（[[TRNG]]）来创建熵并生成高质量的随机密钥。大型组织可以同时运行多个HSM，而不是一个。无论部署一个还是多个，基于外部法规和内部安全策略的主流的、集中式密钥管理系统可以提高安全性和合规性。
+
+HSM通常要经过国际公认的标准认证，例如FIPS 140或通用标准（CC）。这与HSM在保护基础设施和应用程序中的关键功能有关，并且与确保用户产品和加密算法的设计和实现合理的相关需求有关。 FIPS 140安全性可以达到的最高认证级别是安全性级别4。用户通常会根据支付卡行业安全标准委员会针对金融支付应用程序中对HSM的定义要求来验证HSM的安全性。
+
+https://avinetworks.com/glossary/hardware-security-modules/
 </pre>
 </div>
 <div created="20201216025907400" modified="20201216025924831" tags="Cloud" title="IaaS">
@@ -11131,9 +11320,162 @@ STRIDE的命名方式也是基于这6种重点目标的英文首字母。重点�
 <pre>透明数据加密（Transparent Data Encryption，TDE）是在技术和市场推广中经常使用的一个术语。“透明”一般是指加密对于使用数据库的应用程序是透明的，但对于通过获取数据库存储的文件以窃取信息的形式，可以用加密的方式有效防御。
 </pre>
 </div>
-<div created="20201214070126107" modified="20201214070133998" tags="Crypto" title="TEE">
-<pre>可信执行环境（Trusted Execution Environment，TEE）
+<div created="20201214070126107" modified="20210118101023731" tags="Crypto" title="TEE">
+<pre>官方翻译：可信执行环境（Trusted Execution Environment，TEE）
+
+! 介绍
+
+[[TEE Introduction]]
 </pre>
+</div>
+<div created="20210118101032009" modified="20210118102732780" tags="Hardware" title="TEE Introduction">
+<pre>
+! 介绍
+
+可信执行环境（TEE，Trusted Execution Environment） 是Global Platform（GP）提出的概念。针对移动设备的开放环境，安全问题也越来越受到关注，不仅仅是终端用户，还包括服务提供者，移动运营商，以及芯片厂商。TEE是与设备上的Rich OS（通常是Android等）并存的运行环境，并且给Rich OS提供安全服务。它具有其自身的执行空间，比Rich OS的安全级别更高，但是比起安全元素（SE，通常是智能卡）的安全性要低一些。但是TEE能够满足大多数应用的安全需求。从成本上看，TEE提供了安全和成本的平衡。TEE在安全方面注重如下：
+
+* 开放环境的使用，使得设备暴漏于各种攻击之下；
+* 隐私，个人信息如联系人，短消息，照片，视频等，需要不被盗窃，丢失或者受到恶意软件的攻击；
+* 内容保护，对于DRM而言，条件接收服务或者内容保护的许可等也倾向于使用硬件级别的保护；
+* 公司数据，比如登陆VPN的凭据等的保护；
+* 连接性保护，在3G，4G，wifi，乃至NFC等方面，密钥资源的保护；
+* 金融风险，比如金融交易中的用户交互数据（交易内容，交易额，用户输入PIN等）。
+
+TEE的参与者则包含SP，运营商，OS和移动应用开发者，设备厂商，芯片厂商等。
+
+如前所述，TEE是与Rich OS并存的，可见下图。
+
+其中，TEE所能访问的软硬件资源是与Rich OS分离的。TEE提供了授权安全软件（可信应用，TA）的安全执行环境，同时也保护TA的资源和数据的保密性，完整性和访问权限。为了保证TEE本身的可信根，TEE在安全启动过程中是要通过验证并且与Rich OS隔离的。在TEE中，每个TA是相互独立的，而且不能在未授权的情况下不能互相访问。
+
+GP在TEE的标准化方面下足了工夫，基础的规范有TEE内部API，TEE客户端API，当然目前还有一系列的补充的功能性API规范，以及应用管理、调试功能、安全保护轮廓等规范正在制定中。
+
+TEE内部API主要包含了密钥管理，密码算法，安全存储，安全时钟资源和服务，还有扩展的可信UI等API。可信UI是指在关键信息的显示和用户关键数据（如口令）输入时，屏幕显示和键盘等硬件资源完全由TEE控制和访问，而Rich OS中的软件不能访问。内部API是TEE提供给TA的编程接口；
+
+TEE外部API则是让运行在Rich OS中的客户端应用（CA）访问TA服务和数据的底层通信接口。
+
+TEE的概念是基于ARM的TrustZone技术的，虽然GP在文档里一直没有明说这一点。而TrustZone架构是ARM系统化设计出来的，在处理器核和调试功能等方面都有充分的功能性和安全性考虑。因此在针对OMTP的电子消费设备的安全威胁，以及OMTP TR1中提到的扩展的安全威胁，ARM和GP都有相应的考虑。对于硬件安全威胁，ARM在架构设计上使其攻击更加困难，相应的代价也更高一些；而对于软件安全威胁，也不再是一场取得操作系统root权限的游戏了，而是把Rich OS和TEE的执行空间和资源分离，除非TEE本身有漏洞，或者TA包含恶意代码，否则软件攻击也会非常困难。当然，TEE本身应当是通过一定级别的认证（EAL2或EAL3，特殊行业应用EAL4及以上），而TA也肯定是需要相应机构的认证和签名才能部署到设备上去的。无论是TEE的认证，还是TA的可信管理，都是另外的重量级话题。而在此之前，如何实现Rich OS与TEE的通信机制，高效的内存共享机制，以及多核架构带来的问题等，都是具有挑战性的话题。
+
+!! TEE的实现（硬件、软件与开源）
+
+虽然TEE已经发展比较成熟了，但是对于一般开发者或者研究人员，想要真正体会TEE的功能却是一件比较困难的事件。下面总结关于TEE的一些实现，供参考，可以方便TEE的上手实验与操作。
+
+支持TEE的嵌入式硬件技术包含如下：
+
+         （1）AMD的PSP（Platform Security Processor）处理器
+
+                   http://www.amd.com/en-us/innovations/software-technologies/security
+
+         https://classic.regonline.com/custImages/360000/369552/TCC%20PPTs/TCC2013_VanDoorn.pdf
+
+         （2）ARM TrustZone技术（支持TrustZone的所有ARM处理器）
+
+                   http://www.arm.com/zh/about/events/globalplatform-trusted-execution-environment-trustzone-building-security-into-your-platform.php
+
+         （3）Intel x86-64指令集：SGX Software Guard Extensions
+
+                   Intel软件保护扩展：https://software.intel.com/sites/default/files/329298-001.pdf
+
+         （4）MIPS：虚拟化技术Virtualization
+
+                   http://www.imgtec.com/mips/architectures/virtualization.asp
+
+ 
+
+几个TEE的软件实现（提供开源工具或者基于TEE开发的SDK）如下：
+
+         （1）Trustonic公司的t-base，是一个商业产品，已经得到GlobalPlatform的授权认可
+
+                   https://www.trustonic.com/products-services/trusted-execution-environment/
+
+         （2）Solacia公司的securiTEE，也是一个商业产品，并且得到了GlobalPlatform的授权认可
+
+         http://www.sola-cia.com/en/securiTee/product.asp
+
+         （3）OP-TEE，开源实现，来自STMicroelectronics，BSD授权支持下的开源
+
+         开源地址：https://github.com/OP-TEE
+
+         （4）TLK，开源实现，来自Nvidia，BSD授权支持下的开源
+
+         开源地址：http://nv-tegra.nvidia.com/gitweb/?p=3rdparty/ote_partner/tlk.git;a=summary
+
+         （6）T6，开源实现，GPL授权下的开源研究，主要是上海交大的，是国内开展TEE研究比较早的
+
+         地址：http://www.liwenhaosuper.com/projects/t6/t6_overview.html
+
+         （7）Open TEE，开源实现，来自芬兰赫尔辛基大学的一个研究项目，由Intel提供支持，在Apache授权下提供支持
+
+         开源地址：https://github.com/Open-TEE/project
+
+         （8）SierraTEE，来自Sierraware公司的实现，拥有双重属性，一半开源一半商业性质
+
+         地址：http://www.openvirtualization.org/
+
+ 
+
+         商业的TEE实现，如Trustonic的t-base，Solacia的securiTEE不花钱肯定是无法使用的。而T6和SierraTEE貌似都必须购买相应的硬件开发板才能使用其开源的TEE软件，而且硬件开发板也不便宜。OP-TEE、TLK和Open TEE是完全开源实现，值得去学习体验一下TEE环境，博主接下来会分别体验一下这三个开源TEE后再来作评价，是否好用，是否依赖特定硬件，现在还不得而知，只等后面体验后更新吧。
+
+https://www.cnblogs.com/Ph-one/p/7086941.html
+</pre>
+</div>
+<div created="20210118103349773" modified="20210118103415858" tags="Hardware" title="TEE Origin">
+<pre>TEE最早出于OMTP规范，ARM是TEE技术的主导者之一，其TrustZone即是支持TEE技术的产品。
+
+ 2006年，[[OMTP]] (Open Mobile Terminal Platform，开放移动终端平台)工作组智能终端的安全率先提出了一种双系统解决方案：即在同一个智能终端下，除了多媒体操作系统外再提供一个隔离的安全操作系统，这一运行在隔离的硬件之上的隔离安全操作系统用来专门处理敏感信息以保证信息的安全。该方案即TEE的前身。
+
+ 基于OMTP的方案，ARM公司(嵌入式处理器的全球最大方案供应商，它们架构的处理器约占手机市场95%以上的份额)于2006年提出了一种硬件虚拟化技术TrustZone及其相关硬件实现方案。TrustZone即是支持TEE技术的产品，TrustZone是所有Cortex-A类处理器的基本功能，是通过ARM架构安全扩展引入的，而ARM也成为了TEE技术的主导者之一。
+
+ ARM后将其TrustZoneAPI提供给GlobalPlatform，该API已发展为TEE客户端API。GlobalPlatform(全球最主要的智能卡多应用管理规范的组织，简称为GP)是Visa、MasterCard等国际银行卡组织主导的国际标准化组织，从2011年起开始起草制定相关的TEE规范标准，并联合一些公司(ARM等)共同开发基于GP TEE标准的可信操作系统。因此，如今大多数基于TEE技术的Trust OS都遵循了GP的标准规范。
+
+https://blog.csdn.net/fengbingchun/article/details/78657188
+</pre>
+</div>
+<div created="20210118102810885" modified="20210118102827507" tags="Hardware" title="TEE Position">
+<pre>!! TEE的位置
+
+TEE是运行在设备中的，提供介于普通RichOS和SE（智能卡）之间的安全性的框架。当前的很多安全架构还是基于Rich OS + SE的方式，其实这在方便程度和成本上都不能提供“刚刚好”的契合。因为某些小额的支付，DRM，企业VPN等，所需要的安全保护强度并不高，还不需要一个单独的SE来保护，但是又不能直接放在Rich OS中，因为后者的开放性使其很容易被攻击。所以对于这类应用，TEE则提供了合适的保护强度，并且平衡了成本和易开发性。这可以从下图的分析中看到。
+
+对于抗攻击性，SE最高，Rich OS很低；对于访问控制，与抗攻击性类似，但是Rich OS能做得更多一些；对于用户界面，SE无能为力，而Rich OS最丰富；开发难易程度上，Rich OS最容易，当然如果TEE标准做得好，也能做得“相当”容易；处理速度上，TEE和Rich OS相当，因为二者使用的同一个物理处理器，SE则肯定慢；最后，SE是物理上可移除的。
+
+从成本和安全性的平衡来看，下图给出了展示。
+
+可见，加入了TEE后，额外成本增加很低，而可以达到一个中等保护的级别；如果要达到高级别保护，就需要额外的成本了。这个图的分析并不是说TEE的出现就使得设备上不需要SE了，而是作为一种中等安全级别的层级，满足相应的安全目的。
+</pre>
+</div>
+<div created="20210118102739996" modified="20210118102758436" tags="Hardware" title="TEE User Case">
+<pre>!! 具体用例
+
+!!! 公司安全用例
+
+当用户使用移动设备访问电子邮件，内部网和公司文档的时候，需要有可信赖的端到端安全，以确保公司数据在设备上是受保护的，及网络认证数据不被误用。通过将关键资产与开发环境分离，TEE可以有如下方式来增加公司应用的安全：
+
+* 公司应用，如email管理器可以依赖于TA，实现敏感功能如加密存储和email的访问控制；
+* VPN认证可以依赖于TA，允许VPN凭据的安全提供和认证算法实现；
+* 访问策略可以用可信UI实现。当需要访问加密数据和建立网络连接时，需要用户输入口令；
+*  一次性口令（[[OTP]]）可以由TA实现，从而把智能手机作为一个安全认证token使用，这种方式是当使用PC登陆公司网络时适用的（双因子认证方法）。
+
+!!! 内容保护用例
+
+对于高质量内容，如音乐，视频，书籍和游戏，相应的SP也需要有内容保护机制来防止非法拷贝和传播。对内容保护而言，可以有如下几种方式：
+
+* 防止拷贝系统（如数字水印）；
+* 数字版权管理系统（如微软的PlayReady或者OMA DRM）；
+* 条件接收系统（如Nagra，NDS，Irdeto等）。
+
+这些内容保护系统也可以依赖于TA的如下功能：
+*  存储密钥，凭据和证书；
+*   执行关键软件；
+*  执行关键的内容保护函数和/或安全地委托给SE。
+
+!!! 移动支付用例
+
+移动支付可以分为远程移动交易，和近场支付两类。风险则有可能是设备中的恶意代码在用户不知情的情况下，去做了如下的事情：
+
+* 获取用户口令或PIN；
+* 修改交易数据，比如交易金额；
+* 在没有用户确认的情况下生成交易。
+
+借助于TEE的可信UI特性，TEE可以提供用户认证、交易确认和交易处理等方面的保护。</pre>
 </div>
 <div created="20201219080426149" modified="20201219080445374" tags="Protocol" title="TLS">
 <pre>传输层安全协议
@@ -11155,8 +11497,126 @@ transport layer security，TLS
 开放小组架构框架
 </pre>
 </div>
-<div created="20201214070101082" modified="20201214070118114" tags="Crypto Security" title="TPM">
+<div created="20201214070101082" modified="20210118104235206" tags="Crypto Security" title="TPM">
 <pre>Trusted Platform Module，可信平台模块
+
+!! TPM 规范
+
+可信平台模块（英语：Trusted Platform Module，缩写：TPM）是一项安全密码处理器（英语：Secure cryptoprocessor）的国际标准，旨在使用设备中集成的专用微控制器（安全硬件）处理设备中的加密密钥。TPM的技术规范（英语：Specification (technical standard)）由称为可信计算组织（英语：Trusted Computing Group）（[[TCG]]）的资讯业联合体编写。国际标准化组织（ISO）和国际电工委员会（IEC）已于2009年将规范标准化为ISO/IEC 11889。
+</pre>
+</div>
+<div created="20210118103035025" modified="20210118103102202" tags="Standard" title="TPM 2 Standard Description">
+<pre>!! TPM 2.0规范
+
+ TPM 1.2规范对功能的描述采用伪代码的形式，虽然更加正式，但是厂商实现时在细节上还是会存在一定的误解。TPM 2.0规范采用C语言的形式进行了描述，为不同厂商实现时提供了标准的指导。吐槽一下，说实话，TPM2.0的标准看起来也很费劲，对于一个不懂可信计算的开发人来说，让其根据规范实现芯片，绝对是一种煎熬。就算懂点可信计算，根据其规范理解其意思也是一个煎熬的过程，part 1写的不太详细，而后面C代码的关联性又没那么强。不管怎么，对于搞可信计算的人来说，认真研读TPM2.0规范，还是很有收获的，在后面的博客中，将不断总结对TPM 2.0规范的研读，下面给出TPM 2.0四部分概述：
+
+Part1是比较系统的介绍，要了解可信平台模块的基本思想和原理，主要参考Part1吧
+
+Part2给出TPM接口的变量、数据类型、数据结构和常量
+
+Part3总结TPM能执行的所有命令，对于每个命令给出命令请求和响应的格式，并且通过C代码形式分析了每个命令的执行流程
+
+Part4给出了Part3中命令代码用到的算法和方法
+
+实际使用可信计算是很多命令的组合，因此，就算了解每个命令的意思，具体使用时还必须从整体上思考，才能组合出实际的应用。
+
+链接：https://www.jianshu.com/p/b4df31809d35
+</pre>
+</div>
+<div created="20210118103219354" modified="20210118103238221" tags="Hardware" title="TPM 2.0 Crypto Update">
+<pre>!! 在密码算法上的变化
+
+SHA1算法的安全强度已经被证明无法满足需求，已经被弃用。
+
+不同的国度使用的密码算法不一定相同，主要源于不相信别人的密码算法，如在国内主要使用商密的SM系列算法。
+
+RSA虽然是最经典的非对称加密算法，不过对[[ECC]]的使用增加也是一个趋势，在相同的安全强度下，ECC的密钥长度比RSA要短很多，国内[[SM2]]也是一种ECC算法。特别是对于直接匿名认证机制DAA，基于ECC算法的效率明显高于RSA。2009年的美密上，有一篇关于768比特RSA密钥的因式分解，在密码领域TPM 1.2使用2048bit的RSA强度也存在争议。
+
+因此，TPM 2.0相对于TPM 1.2在密码算法上的改变主要参考以上几点。
+
+# TPM 1.2密码算法：RSA加密、RSA签名、RSA-[[DAA]]、SHA1、[[HMAC]]，并没有要求支持对称算法。
+
+# TPM 2.0算法支持：RSA加密和签名、ECC加密和签名、ECC-DAA、ECDH、SHA1、SHA256、HMAC、AES，而且厂商可以随意使用[[TCG]] IDs来增加新的算法，如在国内实现必须增加SM2、SM3和SM4算法，拥有一定的灵活性。
+
+</pre>
+</div>
+<div created="20210118103139436" modified="20210118103159379" tags="Hardware" title="TPM Chipset Usage">
+<pre>!! TPM芯片的使用
+
+影响TPM 1.2使用的最大一个障碍是，PC厂商将TPM默认置为关闭状态。为了激活TPM的使用，用户必须进入固件（PC上通常为BIOS），找到管理TPM安全芯片的目录，将其激活。之所以有这个决定，主要是因为TCG早期受到了外面质疑的影响。质疑者认为使用TPM可能导致PC平台绑定特定的软件，而影响其他软件的使用，特别是厂商可以借此推广自己的软件。TCG因此推荐默认情况下关闭TPM。这实际上是一个资源的浪费，既然不用TPM，为啥要在上亿的PC平台上配备安全芯片呢？老百姓用不到，可以只在面向特定安全领域的终端上安装此芯片。国内TCM在这方面做得还好，只是一些特定型号的安全主机才会配备TCM芯片，并不是每个PC平台都装。
+
+既然要在BIOS中对TPM的使用进行激活，而实际上大部分用户都没有用过BIOS，这样势必导致大部分TPM永远沉睡在主板上。即便激活了TPM 1.2，其状态是没有属主的（unowned），需要通过一个特定的命令来建立属主，往往第一个建立属主的人才是TPM的实际拥有者。在非属主状态，能使用的TPM很有限，没有SRK，密钥也无法创建或者加载，PCR状态也无法进行验证。在TPM 1.2中，固件（BIOS）无法验证启动状态（boot state），固件可以哈希代码并扩展PCRs，但是检查具体的度量值只能靠更上层的操作系统或者应用程序。
+
+在TPM 2.0中对这些情况进行了修复。首先，TPM默认状态应该是开启的。其次，增加了平台域，保证平台固件也可以操作完整的TPM资源，即固件可以创建密钥、加密数据、验证PCR值等。这意味着，平台固件和平台用户可以同时成为TPM的属主（owner）。固件开发者可以使用这种能力来保证一个安全的预引导环境，类似操作系统使用TPM的能力来保护其操作以及上层应用。
+
+链接：https://www.jianshu.com/p/b4df31809d35</pre>
+</div>
+<div created="20210118095820622" modified="20210118103217568" tags="Hardware" title="TPM2 News">
+<pre>TPM 1.2规范主要面向PC平台，其103版本在2009年被接受为ISO标准（ISO/IEC 11889），而且国际上上亿的终端机器和laptop都配备了TPM安全芯片，到目前为止，虽然有声称TPM 2.0的芯片制造出来，不过占据主要市场的还是TPM 1.2芯片。由于TPM 2.0与TPM 1.2芯片并不兼容，在上层软件链成熟前，基于TPM 1.2的芯片还会持续一段时间。不过，由于TPM 2.0的灵活性，解决了TPM 1.2存在的很多安全问题，且满足更多场景的应用，其代替TPM 1.2芯片将是一个必然趋势。
+
+!! 不能只面向PC平台，应该扩展到更加广阔的平台
+
+ TPM 1.2主要面向PC平台设计，而类似的安全思维其实可以扩展到网络、服务器、云环境、移动设备和嵌入式产品等。TPM安全芯片本身是以安全芯片的形式在主机上隔离出一个拥有独立处理能力和存储能力的区域，在这个程度上，虚拟技术、[[TrustZone]]、智能卡等本质上是一致的，不过安全性可能并不在一个层次。
+
+TPM 1.2的owner只有一个就是用户，而计算平台本身可能也需要使用TPM。TPM 1.2中，所有安全和隐私都在该owner的控制下。TPM 2.0将这种控制功能进行了隔离，给出了三个控制域：安全域或者存储域（owner为用户，用户正常的安全功能）；隐私域（owner为平台或者用户，平台身份认证）；平台域（owner为平台，保护平台固件的完整性）。
+
+关于TPM 2.0的三个控制域，以后的文章中会进行详细的分析。
+
+如果TPM使用太困难，成本价格太高，又有谁会想去用呢？TPM 1.2在这方面做的并不是很好。一个安全芯片嵌入到服务器上，体现不了多少成本；但是如果在空间有限的移动设备或者嵌入式设备上配备一个安全芯片，基本没太大的价值。因此，TPM 2.0规范主要提供一个参考，以及可能实现的方式，但是并没有限制必须以安全芯片的形式存在，如可以基于虚拟技术或者ARM TrustZone、[[Intel TXT]]等进行构建，只要能提供一个可信执行环境（[[TEE]]），就可以进行构建。 
+
+!! 密钥
+
+TPM 1.2的背书密钥只有一个，就是EK，出厂时厂商就预置在芯片内，更换都很困难。takeowner后可以生成属主和唯一的存储根密钥SRK，从而可以构建密钥的存储体系。
+
+在TPM 2.0中，EK属于隐私域，可以有多个，而且可以支持不同的非对称算法；SRK属于安全域，也可以有多个和支持不同的算法。实际上TPM 2.0的三个控制域中，都支持多密钥和多算法。
+
+TPM 2.0的主密钥都是通过主种子，使用密钥派生算法KDF来生成。存储种子的空间比存储密钥的空间要小很多。TPM 2.0中密钥的存储通常是通过对称加密，父密钥的强度不能低于子密钥吧，要不子密钥的安全强度也无法达到其声称的size。
+
+!! 平台配置寄存器PCRs
+
+PCRs主要用来存储系统启动和运行过程中的度量值，防止度量日志被篡改。PCRs值不只保证每次系统启动时执行相同的代码，其保证以相同的顺序执行相同的代码。
+
+微软在win8中就使用PCR来恢复unsealing Bitlocker的密钥。如果系统启动过程中有任何微小的变化，都需要用户干预才能恢复，因此这个过程比较脆弱。
+
+TPM 2.0规范运行其有多个PCRs banks，一个bank内所有PCR使用相同的算法进行扩展操作。而且不同的banks可以分配不同的PCRs。对于不同的bank，扩展操作是相互独立的，互不干扰。
+
+!! 签名
+
+TPM 2.0的签名方法支持多种算法，和各种复杂的签名机制，包含DAA和U-Prove。
+
+不过，TPM 2.0的签名原语设计的很灵活高效。在一个复杂的签名机制中，直接使用签名私钥的部分只是整个签名计算的很小一部分，而且是一个自包含的操作。基于这些考虑，TPM 2.0设计了灵活的签名机制，其它复杂的签名算法可以很容易使用其签名原语进行构造。
+
+Liqun Chen在CCS 2013上的论文“Flexible and scalable digital signatures in TPM 2.0”对签名机制和实现进行了详细的描述，可以参考。
+
+!! 授权
+
+授权即是否允许软件进程访问TPM内部的资源（密钥、计数器、NV存储空间等）。
+
+TPM 1.2拥有不同的机制来授权客体（objects）的使用、委托使用和迁移等。而TPM 2.0提供了一个统一的框架来使用授权功能，授权功能可以通过各种独特的方式进行组合来增加灵活性。
+
+TPM 2.0允许使用明文密码和HMAC的授权，也允许使用多个授权限定符来构造任意复杂的授权策略。增强的授权机制是TPM 2.0的一个特色。
+
+TPM 1.2的授权比较受限制，唯一的授权访问方式是基于passwords和PCR值。例如，为了使用TPM内部的一个密钥，软件需要证明其拥有某个password的知识（通过hash的方式嵌入在可信命令中）；而且可以将该密钥与特定的PCR状态seal在一起。这使得TPM1.2的授权机制缺乏灵活性。通常一个计算机平台拥有多个用户，如何共享TPM密钥和数据是比较困难的。不同用户由于password不一样，他们知道的密钥集合也是相互独立的。系统管理员如何授权这些密钥的使用是一个难点。
+
+TPM 1.2中，软件通过授权会话证明其拥有password（消息验证码），在命令需要授权前通常通过一个独立的命令来开启会话。TPM 2.0提出了增强的授权机制（Enhanced Authorization，EA）。
+
+TPM 2.0对密钥和数据的授权使用方式进行了扩展，授权会话变成了策略会话，多个授权方式可以通过布尔逻辑的形式进行组合。例如，在一个场景中，Alice和Bob两个用户拥有不同的passwords，现在想要让他们可以访问同一个密钥，可以创建一个策略“当且仅当Password(Alice) or Password(Bob),允许访问密钥”。软件进程可以先创建策略，在生成TPM密钥或者数据时指定该策略的哈希值即可，TPM不需要知道策略的详情，hash值足够。
+
+!! TPM 2.0的授权方式总结
+
+Passwords：与TPM 1.2类似
+
+PCR值：与TPM 1.2一样，不过布尔逻辑加法表示可以使用多个PCR状态
+
+TPM counter or NVRAM value：需要计数器或者NV空间拥有某个特定值
+
+Physical presence：需要用户在计算机平台的物理现场
+
+Commands：客体只能被给定的一组命名使用
+
+Digital signature from a public key：允许使用外部智能卡来作为授权条件
+
+链接：https://www.jianshu.com/p/b4df31809d35
 </pre>
 </div>
 <div created="20201219061844240" modified="20201219061859179" tags="Crypto" title="transposition cipher">
@@ -11185,10 +11645,22 @@ trapdoor one-way function
 
 来源：《海峡两岸信息科学技术名词》</pre>
 </div>
-<div created="20201214084659482" modified="20201214085933758" tags="Hardware" title="TrustZone">
-<pre>TrustZone
+<div created="20201214084659482" modified="20210118104028823" tags="Hardware" title="TrustZone">
+<pre>移动设备使用TrustZone的最主要的原因之一是它可以提供”可信执行环境([[TEE]])”。2003年，ARM公司提出TrustZone。
 
-?
+ ARM TrustZone技术：(1)、ARMv6版本开始的安全硬件特性，包括ARM11及Cortex A系列，目前大部分手机芯片均有该硬件特性。(2)、同时运行一个安全的OS和一个普通的OS：两个系统之间互相隔离运行，安全的OS具有更多的权限。(3)、TrustZone是一个全系统级别的安全架构：处理器、内存和外设的安全隔离。
+
+ 手机内部分为硬件、操作系统、应用软件三层。安全技术和解决方案的演进顺序依次为应用软件层安全技术、操作系统层安全技术和硬件层安全技术。从抗攻击的角度来讲，越是基于底层的安全防护越是抗攻击。目前很多手机厂商推出的指纹，都是基于硬件的安全方案来进行保护的，通过一个硬件隔离区来保护指纹数据和敏感操作，这种硬件隔离技术就是TEE技术。TEE是存在于智能手机(或任何移动设备)主处理器内的安全区，确保敏感数据在可信的环境里得到存储、处理和保护。TEE有能力对经授权的安全软件(所谓的”可信应用程序”)进行安全的执行，因此可通过实施保护、保密性、完整性和数据访问权限，提供端到端的安全性。目前在国内市场苹果、华为、三星等手机共同选择了TEE技术。
+
+ 目前，ARM在芯片IP设计中已全面支持了TEE，包括高通、联发科、三星、海思、展讯等企业已采用，成为基于硬件安全的方案。
+
+ 可信终端具有以下三个基本的安全功能：
+
+ (1)、基于硬件隔离的安全执行环境：TEE提供了基于硬件隔离的安全世界来保护敏感数据的安全和程序正确执行。实现TEE需要将设备的硬件和软件资源全部划分成安全世界和非安全世界，两个世界具有独立的系统资源，包括寄存器、物理内存和外设，不能随意进行数据交换。安全世界中的代码和资源受到严格的访问控制策略保护，非安全世界的进程禁止访问安全世界，以保证存储在安全世界的敏感资源不被非法访问或窃取，能够有效减少安全系统漏洞的披露、外界的攻击和病毒的入侵。
+
+ (2)、基于信任链的平台完整性：为了保证整个系统的安全，TEE从系统引导启动开始逐步验证以保证TEE平台的完整性。设备加电后，加载ROM中的安全引导程序，并利用根密钥验证其完整性。然后，该引导程序进入TEE 初始化阶段并启动安全操作系统，逐级核查安全操作系统启动过程中的各个阶段的关键代码以保证安全操作系统的完整性，同时防止未授权或经过恶意篡改软件的运行；安全操作系统启动后，运行非安全世界的引导程序并启动普通操作系统。至此基于信任链，完成了移动终端整个系统的安全启动，能够有效抵御TEE启动过程中的非法篡改、代码执行等恶意行为。
+
+ (3)、基于安全存储的数据机密性：用户的身份、密钥和证书等敏感信息需要高度保护，TEE依靠加密和完整性保护技术来保护数据和密钥。TEE将用户的身份、密钥和证书等敏感信息存储在安全区域中，这些敏感信息只能由TEE授权的可信应用访问或修改，并且TEE为这些敏感信息的操作处理提供了加密和完整性保护机制。同时，可利用TEE中存储的密钥对普通执行环境下用户的信息，如通讯录、短信等敏感信息进行加密，保证存储在普通执行环境下敏感信息的安全性。
 
 </pre>
 </div>
