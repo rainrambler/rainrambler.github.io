@@ -509,6 +509,8 @@ Error message and password prompt
 
 <li>TEE Position</li>
 
+<li>TEE Usages WikiMili</li>
+
 <li>TEE User Case</li>
 
 <li>TEE WikiMili</li>
@@ -9988,7 +9990,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210120143633506" list="[[TEE Details WikiMili]] [[TEE WikiMili]]" modified="20210120143633506" title="$:/StoryList">
+<div created="20210120143633506" list="[[TEE Usages WikiMili]] [[TEE Details WikiMili]] [[TEE WikiMili]]" modified="20210120143633506" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11555,6 +11557,26 @@ TEE是运行在设备中的，提供介于普通RichOS和SE（智能卡）之间
 从成本和安全性的平衡来看，下图给出了展示。
 
 可见，加入了TEE后，额外成本增加很低，而可以达到一个中等保护的级别；如果要达到高级别保护，就需要额外的成本了。这个图的分析并不是说TEE的出现就使得设备上不需要SE了，而是作为一种中等安全级别的层级，满足相应的安全目的。
+</pre>
+</div>
+<div created="20210120150458025" modified="20210120150804364" tags="IoT" title="TEE Usages WikiMili">
+<pre>!! DRM
+
+注意：许多TEE文献都在“高级内容保护”的定义下涵盖了该主题，这是许多版权所有者的首选命名法。高级内容保护是数字版权管理（[[DRM]]）的一个特定用例，在一些社区（例如自由软件基金会）中引起争议。版权持有者广泛使用它来限制最终用户消费4K高清晰度电影等内容的方式。
+
+TEE是用于保护连接的设备（例如智能手机，平板电脑和高清电视）上的数字编码信息（例如HD电影或音频）的合适环境。这种适用性来自TEE剥夺设备所有者读取存储的机密的能力，以及TEE与设备上的显示器和/或子系统之间通常存在受保护的硬件路径这一事实。
+
+TEE用于在设备上存储内容后对其进行保护：尽管在传输或流传输期间通过使用加密来保护内容，但是TEE一旦在设备上对其进行了解密，就可以通过确保未解密内容来保护内容。暴露于未经应用开发者或平台供应商批准的环境中。
+
+!! 企业，政府和云
+
+政府，企业和云服务提供商可以使用TEE来安全处理移动设备和服务器基础结构上的机密信息。 TEE提供了一定级别的保护，可防止在移动操作系统中生成的软件攻击，并有助于控制访问权限。 它通过容纳敏感的“受信任”应用程序来实现此目的，这些应用程序需要与移动操作系统以及可能存在的任何恶意恶意软件隔离并加以保护。 通过利用TEE提供的功能和安全级别，可以确保政府和企业使用自己的设备的员工以安全和受信任的方式进行操作。 同样，基于服务器的TEE有助于防御针对后端基础结构的内部和外部攻击。
+
+!! 安全的模块化编程
+
+随着软件资产和重用的增加，通过将功能分离成小的独立模块，模块化编程是设计软件体系结构最有效的过程。 由于每个模块都包含执行其所需功能所需的一切，因此TEE允许组织具有高可靠性和安全性的完整系统，同时防止每个模块遭受其他模块的漏洞。
+
+为了使模块进行通信和共享数据，TEE提供了一种手段，可以结合对象使用诸如对象序列化之类的机制来安全地在模块之间发送/接收有效载荷。
 </pre>
 </div>
 <div created="20210118102739996" modified="20210118102758436" tags="Hardware" title="TEE User Case">
