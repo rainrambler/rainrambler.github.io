@@ -157,6 +157,8 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/image-picker/system-1266173438</li>
+
 <li>$:/state/sidebar</li>
 
 <li>$:/state/tab-1749438307</li>
@@ -327,6 +329,8 @@ Error message and password prompt
 
 <li>GRC</li>
 
+<li>GSM A5</li>
+
 <li>Hardware Security Module Applications</li>
 
 <li>HIPAA</li>
@@ -416,6 +420,8 @@ Error message and password prompt
 <li>OFB</li>
 
 <li>One-Time Pad</li>
+
+<li>OSA</li>
 
 <li>OTP</li>
 
@@ -9975,14 +9981,17 @@ Error message and password prompt
 <div created="20201214010642236" modified="20201214010650094" title="$:/SiteTitle">
 <pre>Anyu Notes</pre>
 </div>
+<div created="20210211064958739" modified="20210211065001127" title="$:/state/image-picker/system-1266173438">
+<pre>hide</pre>
+</div>
 <div created="20201214062600272" modified="20201214062612422" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20201214021154511" modified="20201214021748713" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20201214021154511" modified="20210211064913330" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20201214021155936" modified="20201214021155936" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
+<div created="20201214021155936" modified="20210211064926354" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
 <div created="20201214021147734" modified="20201214023552574" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
@@ -9990,7 +9999,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210120143633506" list="[[TEE Usages WikiMili]] [[TEE Details WikiMili]] [[TEE WikiMili]]" modified="20210120143633506" title="$:/StoryList">
+<div created="20210214033447756" list="[[GSM A5]] [[TEE WikiMili]]" modified="20210214033447756" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10051,10 +10060,10 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20201214015738866" modified="20210119083528257" title="$:/temp/NewTagName">
+<div created="20201214015738866" modified="20210214033505420" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20201214032910570" modified="20210119025551755" title="$:/temp/search">
+<div created="20201214032910570" modified="20210214033452944" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
@@ -10620,8 +10629,12 @@ Federal Information Processing Standards，FIPS
 
 </pre>
 </div>
-<div created="20201219073342474" modified="20201219073356792" tags="Crypto" title="GCM">
-<pre>GCM(Galois/Counter Mode)模式既能并行化加密解密且能解决差错传递问题，又能进行消息的完整性校验。</pre>
+<div created="20201219073342474" modified="20210211065428121" tags="Crypto" title="GCM">
+<pre>GCM(Galois/Counter Mode)模式既能并行化加密解密且能解决差错传递问题，又能进行消息的完整性校验。
+
+[img[image/gcm.png]]
+
+</pre>
 </div>
 <div created="20201214031051102" modified="20201214032504094" tags="Law" title="GDPR">
 <pre>通用数据保护条例
@@ -10645,6 +10658,16 @@ The General Data Protection Regulation (EU) 2016/679 (GDPR) is a regulation in E
 </div>
 <div created="20201219035859018" modified="20201219040046477" tags="IT" title="GRC">
 <pre>GRC（Governance, Risk and Compliance,治理，风险和合规）
+</pre>
+</div>
+<div created="20210214033453932" modified="20210214033631912" tags="Telecom" title="GSM A5">
+<pre>The encryption algorithm used in the [[GSM]] system is a stream cipher known as the A5 algorithm. Multiple versions of the A5 algorithm exist which implement various levels of encryption. A5/0 utilizes no encryption. A5/1 is the original A5 algorithm used in Europe.
+
+Ref:
+
+http://www.gsm-security.net/faq/gsm-encryption-algorithm-a5-cipher.shtml
+
+https://www.gsma.com/security/security-algorithms/
 </pre>
 </div>
 <div created="20210118130356100" modified="20210118130558605" tags="Hardware" title="Hardware Security Module Applications">
@@ -11114,6 +11137,12 @@ one-time pad
 来源：《计算机科学技术名词 》 (第三版)
 </pre>
 </div>
+<div created="20210210075311505" modified="20210210075343941" tags="Organizations" title="OSA">
+<pre>Open Security Architecture
+
+开放安全架构
+</pre>
+</div>
 <div created="20201214035113560" modified="20201219062524553" tags="Crypto" title="OTP">
 <pre>* One-Time Password
 * [[One-Time Pad]]
@@ -11559,7 +11588,7 @@ TEE是运行在设备中的，提供介于普通RichOS和SE（智能卡）之间
 可见，加入了TEE后，额外成本增加很低，而可以达到一个中等保护的级别；如果要达到高级别保护，就需要额外的成本了。这个图的分析并不是说TEE的出现就使得设备上不需要SE了，而是作为一种中等安全级别的层级，满足相应的安全目的。
 </pre>
 </div>
-<div created="20210120150458025" modified="20210120150804364" tags="IoT" title="TEE Usages WikiMili">
+<div created="20210120150458025" modified="20210121010832031" tags="IoT" title="TEE Usages WikiMili">
 <pre>!! DRM
 
 注意：许多TEE文献都在“高级内容保护”的定义下涵盖了该主题，这是许多版权所有者的首选命名法。高级内容保护是数字版权管理（[[DRM]]）的一个特定用例，在一些社区（例如自由软件基金会）中引起争议。版权持有者广泛使用它来限制最终用户消费4K高清晰度电影等内容的方式。
@@ -11567,6 +11596,22 @@ TEE是运行在设备中的，提供介于普通RichOS和SE（智能卡）之间
 TEE是用于保护连接的设备（例如智能手机，平板电脑和高清电视）上的数字编码信息（例如HD电影或音频）的合适环境。这种适用性来自TEE剥夺设备所有者读取存储的机密的能力，以及TEE与设备上的显示器和/或子系统之间通常存在受保护的硬件路径这一事实。
 
 TEE用于在设备上存储内容后对其进行保护：尽管在传输或流传输期间通过使用加密来保护内容，但是TEE一旦在设备上对其进行了解密，就可以通过确保未解密内容来保护内容。暴露于未经应用开发者或平台供应商批准的环境中。
+
+!! 移动金融服务
+
+移动商务应用程序（例如：移动钱包，点对点支付，非接触式支付或使用移动设备作为POS终端）通常具有明确的安全要求。TEE通常与近场通信（NFC），SE和受信任的后台系统结合使用，以提供实现金融交易所需的安全性。
+
+在某些情况下，需要与最终用户进行交互，这可能要求用户向移动OS暴露敏感信息（例如PIN，密码或生物识别符），以作为对用户进行身份验证的手段。TEE可选地提供受信任的用户界面，该界面可用于在移动设备上构造用户身份验证。
+
+!! 认证方式
+
+TEE非常适合支持生物识别ID方法（面部识别，指纹传感器和语音授权），与PIN和密码相比，TEE可能更易于使用且更难于窃取。身份验证过程通常分为三个主要阶段：
+
+*在设备上存储参考“模板”标识符，以便与在下一阶段提取的“图像”进行比较。
+* 提取“图像”（例如，扫描指纹或捕获语音样本）。
+* 使用匹配引擎比较“图像”和“模板”。
+
+TEE是移动设备中用于容纳匹配引擎和验证用户身份所需的关联处理的好区域。该环境旨在保护数据并建立针对位于移动操作系统中的非安全应用程序的缓冲区。除了使手机开发人员的成本保持较低之外，这种额外的安全性还可以帮助满足服务提供商的安全需求。
 
 !! 企业，政府和云
 
